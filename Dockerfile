@@ -6,8 +6,7 @@ WORKDIR /usr/src/app
 
 # Copy the JAR file
 COPY target/my-app-1.0.jar app.jar
-# Expose port
 EXPOSE 8080
 
 # Run JAR
-CMD ["java", "-jar", "app.jar"]
+CMD ["java", "-jar", "simple-java-maven-app.jar"]
