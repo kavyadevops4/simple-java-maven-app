@@ -9,4 +9,4 @@ COPY target/my-app-1.0.jar app.jar
 EXPOSE 8080
 
 # Run JAR
-CMD ["java", "-jar", "simple-java-maven-app.jar"]
+CMD ["java", "-jar", "app.jar"]
