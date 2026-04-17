@@ -1,3 +1,3 @@
-docker.withRegistry('https://index.docker.io/v1/', 'docker-hub-credential') {
-    dockerImage.push()
+withDockerRegistry([credentialsId: 'docker-hub-credential', url: 'https://index.docker.io/v1/']) {
+    sh 'docker push smvkavya/project1-demo-dockerimage:01'
 }
